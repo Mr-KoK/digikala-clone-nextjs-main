@@ -136,20 +136,20 @@ export default function Footer() {
 
       <div className='flex items-center justify-center py-3 mt-6 bg-gray-600 gap-x-3'>
         <Image
-          src='/developer.jpg'
+          src='/mr-kok.jpg'
           className='overflow-hidden border-4 border-red-600 rounded-full'
-          alt='کمال حیدری'
+          alt='مهرداد حاجیانی'
           width={64}
           height={64}
         />
         <p className='text-white'>
           توسعه داده شده توسط{' '}
           <a
-            href='http://heydari-dev.ir'
+            href='https://github.com/Mr-KoK'
             target='_blank'
             className='text-sky-400'
           >
-            کمال حیدری
+             مهرداد حاجیانی
           </a>
         </p>
       </div>
