@@ -4,10 +4,10 @@ const connection = {
   isConnected: 0,
 }
 
-async function connect(): Promise<void> {
+async function connect(): Promise<typeof mongoose> {
   if (connection.isConnected === 1) {
     console.log('already connected')
-    return
+    return mongoose
   }
 
   if (mongoose.connections.length > 0) {
@@ -15,7 +15,7 @@ async function connect(): Promise<void> {
 
     if (connection.isConnected === 1) {
       console.log('use previous connection')
-      return
+      return mongoose
     }
 
     await mongoose.disconnect()
@@ -28,6 +28,7 @@ async function connect(): Promise<void> {
 
   console.log('new connection')
   connection.isConnected = db.connections[0].readyState
+  return mongoose
 }
 
 async function disconnect(): Promise<void> {
