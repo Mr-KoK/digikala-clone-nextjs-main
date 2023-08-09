@@ -38,9 +38,9 @@ interface EditProductFormProps {
 type Props = CreateProductFormProps | EditProductFormProps
 
 export interface SelectedCategories {
-  levelOne?: DataModels.ICategory
-  levelTwo?: DataModels.ICategory
-  levelThree?: DataModels.ICategory
+  levelOne?: DataModels.ICategory | any
+  levelTwo?: DataModels.ICategory | any
+  levelThree?: DataModels.ICategory | any
 }
 
 const tabListNames = [
