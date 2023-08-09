@@ -30,7 +30,7 @@ User-friendly search, filter, and sort functions
 1. Clone or download the repository by running the following command in your terminal:
 
 ```bash
-git clone https://github.com/kamalheydari/digikala-clone-nextjs.git
+git clone https://github.com/mr-kok/digikala-clone-nextjs.git
 ```
 
 2. Install the project dependencies using either npm or yarn:
