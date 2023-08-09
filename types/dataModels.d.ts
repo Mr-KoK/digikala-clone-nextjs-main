@@ -104,6 +104,7 @@ declare namespace DataModels {
   interface IReview {
     _id: string
     user: IUser
+    updatedAt: Date | string
     product: IProduct
     title: string
     rating: number
