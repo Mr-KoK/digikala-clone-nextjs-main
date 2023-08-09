@@ -29,10 +29,11 @@ const Create: NextPage = () => {
 
   //? Handlers
   const createHandler: SubmitHandler<ICategoryForm> = (data) => {
-    const { name, slug, image, colors } = data
+    const { name, slug, image, colors, toObject } = data
     createCtegory({
       body: {
         name,
+        toObject,
         parent: parentId || '',
         slug: slug.trim().split(' ').join('-'),
         image,
