@@ -28,10 +28,7 @@ async function connect(): Promise<Connection> {
     connection.isConnected = db.readyState
   })
 
-  await mongoose.connect(process.env.MONGODB_URL!, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  await mongoose.connect(process.env.MONGODB_URL!)
 
   return db
 }
