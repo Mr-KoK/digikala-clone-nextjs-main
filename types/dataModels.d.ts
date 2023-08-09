@@ -33,7 +33,7 @@ declare namespace DataModels {
     image: string
     colors?: { start: string; end: string }
     level: number
-    children?: ICategory[]
+    children?: ICategory[] | any
   }
 
   interface IDetails {
