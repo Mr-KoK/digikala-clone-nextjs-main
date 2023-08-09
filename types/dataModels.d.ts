@@ -29,11 +29,12 @@ declare namespace DataModels {
     _id: string
     name: string
     slug: string
-    parent?: string
+    parent?: string | any
     image: string
     colors?: { start: string; end: string }
     level: number
     children?: ICategory[] | any
+    toObject : any
   }
 
   interface IDetails {
