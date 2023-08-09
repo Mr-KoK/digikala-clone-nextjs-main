@@ -60,7 +60,7 @@ const getCategories = async (req: NextApiRequest, res: NextApiResponse) => {
     const categories: DataModels.ICategoryDocument[] = await Category.find()
 
     const getCategoriesWithChildren = async (): Promise<ICategoriesList[]> => {
-      const allCategories: DataModels.ICategoryDocument[] =
+      const allCategories: DataModels.ICategory[] =
         await Category.find()
 
       function findChildren(category: DataModels.ICategory): ICategoriesList {
